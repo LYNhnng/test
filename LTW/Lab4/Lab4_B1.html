@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-Bai1</title>
+    <style>
+html,body{
+    transition: background-color 1s; /*Hiệu ứng chuyển trang */
+
+}
+.button{
+  padding: 10px 20px; 
+  margin: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <h1>WEB MÀU SẮC</h1>
+    <div id="container"></div>
+<script>
+const colors = ['red', 'blue', 'green', 'orange','pink','yellow','purple'];
+const buttonContainer = document.getElementById('container');
+
+colors.forEach(color => {
+    const button = document.createElement('button');
+    button.innerText = `Botton ${color}`;
+    button.className ='button';
+    button.style.backgroundColor =color;
+
+    // sự kiện click
+    button.addEventListener('click', () => {
+        document.body.style.backgroundColor = color;
+    });
+    buttonContainer.appendChild(button);
+} );
+
+</script>
+</body>
+</html>

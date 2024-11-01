@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3-Bai2</title>
+    <style>
+        html, body{
+            font-family: Arial,  sans-serif;
+            background-color: #f5f5f5;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           display: flex;
+        }
+        .container{
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: -1px -1px 3px 8px rgba(181, 177, 177, 0.4);
+            -webkit-box-shadow: 0px 0px 3px 0px rgba(181, 177, 177, 0.4);
+            -moz-box-shadow: 0px 0px 3px 0px rgba(181, 177, 177, 0.4);
+            width: 500px;
+            max-width: 100%;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+        }
+        .form-group{
+            margin-bottom: 30px;
+          
+        }
+        .form-group label{
+           display: block;
+           font-size: 14px;
+           font-weight: bold;
+           margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea{
+            width: 93%;
+            padding: 15px;
+            font-size: 14px;
+            border: solid 1px #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group input::placeholder,
+        .form-group select::placeholder,
+        .form-group textarea::placeholder {
+            color: #ccc;
+        }
+        .form-group select{
+            appearance: none; /* k hiện dấu mũi tên*/
+        }
+        .form-group textarea{
+            height: 100px;
+            resize: none;
+        }
+.submit-btn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.submit-btn i{
+    margin-left: 10px;
+}
+.form-group3 {
+    display: flex;
+
+}
+.form-group3 .form-group{
+margin: 40px;
+margin-left: 0px;
+margin-top: 0px;
+}
+.form-group3 .email{
+    float: left;
+
+}
+.form-group3 .phone{
+    float: right;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="name"> FULL NAME *</label>
+                <input type="text" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group3">
+            <div class="form-group email">
+                <label for="email">EMAIL *</label>
+                <input type="text" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group phone">
+                <label for="phone">PHONE</label>
+                <input type="text" id="phone" placeholder="Enter Your Number Phone">
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="services">NEEDED SERVICES</label>
+                <select id="services">
+                    <option>Please chooses</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">MESSAGE</label>
+                <textarea  id="message" placeholder="Your message here..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+</body>
+</html>

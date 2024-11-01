@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-Bai7</title>
+    <style>
+html ,body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(8, 50px);
+      gap: 10px;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button:active {
+      background-color: #388e3c;
+    }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="grid-container" id="gridContainer"></div>
+
+  <script>
+    let nextNumber = 1; // Số tiếp theo cần nhấn
+
+    // Khởi tạo các button từ 1 đến 64 và thêm vào grid
+    function createButtons() {
+      const container = $('#gridContainer');
+      for (let i = 1; i <= 64; i++) {
+        const button = $(`<button>${i}</button>`);
+        button.on('click', () => handleClick(i, button));
+        container.append(button);
+      }
+    }
+
+    // Xử lý sự kiện khi nhấn vào button
+    function handleClick(number, button) {
+      if (number === nextNumber) {
+        button.remove(); // Xóa button nếu nhấn đúng
+        nextNumber++; // Cập nhật số tiếp theo cần nhấn
+      } else {
+        alert('Bạn đã nhấn sai! Vui lòng nhấn theo thứ tự.');
+      }
+    }
+
+    // Gọi hàm tạo button khi trang được tải
+    $(document).ready(createButtons);
+  </script>
+</body>
+</html>

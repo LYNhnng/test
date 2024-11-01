@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-Bai5</title>
+    <style>
+     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    #container {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="image-container">
+        <img src="img.webp" alt="Image">
+      </div>
+    
+      <script>
+        let angle = 0;
+    
+        function rotateImage() {
+          angle += 15; // Cộng thêm 15 độ mỗi lần gọi
+          $('#image-container').css('transform', `rotate(${angle}deg)`);
+        }
+    
+        // Gọi hàm xoay mỗi 2 giây
+        setInterval(rotateImage, 2000);
+      </script>
+    
+</body>
+</html>

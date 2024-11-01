@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Lab3-Bai4></Lab3-Bai4></title>
+    <style>
+
+        html, body{
+           background-color: #f2f2f2;
+            font-family: tahoma, sans-serif;
+            display: flex;
+            justify-content: center; /*căn giữa */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+
+        }
+
+        
+        #container{
+           border-radius: 10px;
+         padding: 20px;
+         width: 400px;
+            box-shadow: -1px -1px 3px 8px rgba(181, 177, 177, 0.4);
+            -webkit-box-shadow: 0px 0px 3px 0px rgba(181, 177, 177, 0.4);
+            -moz-box-shadow: 0px 0px 3px 0px rgba(181, 177, 177, 0.4);
+
+        }
+        #container h2{
+            color: #8bc34a;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .input-group{
+            margin-bottom: 10px;
+           
+        }
+        .input-group input,  .input-group select{
+            width: calc(100%-20px);
+            padding: 10px;
+            border: solid 1px #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 14px;
+
+        }
+        .input-group i{
+            margin-right: 10px;
+           
+        }
+.input-group icon{
+    position: absolute;
+    margin: 10px;
+    color: #aaa;
+}
+.input-group1 .input-group input{
+    padding-left: 40px; /* lùi vào cho icon */
+   width: 80%;
+
+}
+
+
+.input-group2 .dateofbirth .dob{
+    display: flex;
+   
+}
+.input-group2{
+    display: flex;
+    margin: 10px;
+}
+.input-group2 .dateofbirth{
+    float: left;
+    width: 200px;
+}
+.input-group2  .dateofbirth .dob input{
+    width: 40px;
+}
+
+
+.input-group2 .gender{
+    float: right;
+    width: 200px;
+
+}
+
+  .input-group2 .gender .genderplace{
+    display: flex;
+   justify-content: space-between;
+   margin-bottom:15px ;
+ 
+   
+  }      
+  .input-group2 .gender .genderplace div{
+     width: 48%;
+padding: 10px;
+text-align: center;
+border:  solid 1px #ddd;
+border-radius: 5px;
+cursor: pointer;
+  }
+
+ .input-group2 .gender .genderplace div:hover{
+background-color: #8bc34a;
+color: white;
+ }
+
+
+  
+  .input-group3 .payment-method{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+.input-group3 .payment-method div{
+width: 48%;
+padding: 10px;
+text-align: center;
+border:  solid 1px #ddd;
+border-radius: 5px;
+cursor: pointer;
+}
+.input-group3 .payment-method div:hover{
+    background-color: #8bc34a;
+    color: white;
+}
+.input-group3 .input-group input{
+    padding-left: 40px; /* lùi vào cho icon */
+   width: 80%;
+
+}
+.input-group3 .card{
+    display:  flex;
+}
+.input-group3 .card .cvc {
+    float: left;
+
+}
+.input-group3 .card .cvc input{
+    padding-left: 40px; /* lùi vào cho icon */
+   width: 60%;
+}
+.input-group3 .card .card2{
+    float: right;
+}
+.input-group3 .card .card2 select{
+    width: calc(48% -10px )
+}
+.input-group4 .terms{
+    display: flex;
+    margin: 10px;
+}
+.input-group4 .terms label{
+    font-size: 12px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="input-group1">
+<h2>Account</h2>
+<div class="input-group">
+
+    <i class="fas fa-user icon"></i>
+    <input type="text" placeholder="Full Name">
+</div>
+
+<div class="input-group">
+    <i class="fas fa-envelope icon"></i>
+    <input type=" text" placeholder="Email Adress">
+</div>
+<div class="input-group">
+    <i class="fas fa-key icon"></i>
+    <input type="text" placeholder="Password">
+</div>
+
+</div>
+
+<div class="input-group2">
+
+<div class="dateofbirth">
+   <h2>Date Of Birth</h2>
+   <div class="input-group dob">
+
+    <input type="text" placeholder="DD">
+    <input type="text" placeholder="MM">
+    <input type="text" placeholder="YYYY">
+   </div>
+</div>
+
+
+<div class="gender">
+
+    <h2>Gender</h2>
+    <div class="genderplace">
+        <div class="active1"><i class="fas mamle"></i>Male</div>
+        <div><i class="fab female"></i>Female</div>
+    </div>
+
+
+</div>
+</div> <!--input-group2-->
+<div class="input-group3">
+    <h2>Payment Details</h2>
+    <div class="payment-method">
+        <div class="active"><i class="fas fa-cc-visa"></i>Creadit Card</div>
+        <div><i class="fab fa-paypal"></i>Paypal</div>
+    </div>
+
+    <div class="input-group">
+        <i class="fas fa-credit-card icon"></i>
+        <input type="text" placeholder="Card Number">
+    </div>
+
+    <div class="input-group card">
+        <div class="input-group cvc">
+        <i class="fas fa-user icon"></i>
+        <input type="text" placeholder="Card CVC">
+    </div>
+    <div class="input-group card2">
+        <select > <option>01 Jan</option></select>
+        <select ><option>2015</option></select>
+    </div>
+        
+        
+    </div>
+
+</div>
+<div class="input-group4">
+    <h2>Terms and Conditions</h2>
+    <div class="terms">
+        <input type="checkbox">
+        <label>I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+    </div>
+</div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 Bai1</title>
+    <style>
+
+
+html, body ul{
+    font-size: 13px;
+    font-family: tahoma, sans-serif;
+margin: 0;
+padding: 0;
+
+}
+html, body{
+    height: 100%;
+}
+#container{
+    height: 100%;
+   width: 1200px;
+   box-shadow: -1px -1px 3px 8px rgba(117,7,7,0.4);
+            -webkit-box-shadow: 0px 0px 3px 0px rgba(117,7,7,0.4);
+            -moz-box-shadow: 0px 0px 3px 0px rgba(117,7,7,0.4);
+
+margin: 0 auto; /* căn giữa màn hình */
+
+}
+#container .menu{
+height: 60px;
+background-color: #eee;
+border-left: solid 5px firebrick;
+border-bottom: solid 2px firebrick;
+
+
+}
+#container .menu li{
+    list-style-type: none;
+}
+#container .menu ul li{
+    float: left; /* làm 1 hàng ngang */
+    font-weight: bold;
+    padding: 20px;
+   
+  
+}
+#container .menu ul li:hover{
+background-color: darkred;
+color: white;
+
+
+cursor: pointer; /* hình con trỏ chuột */
+}
+#container .menu ul .sub {
+    background-color: #eeeeee;
+position: absolute; /* tách ra làm 2 cấp */
+margin-left: -20px;
+margin-top: 25px;
+border: solid 2px darkred;
+display: none;
+
+}
+#container .menu ul .sub li{
+color: black;
+float: none; /* thành 1 hàng dọc */
+border-bottom: solid 1px #ccc;
+
+
+
+}
+#container .menu ul .sub li:hover{
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+#container .menu ul li:hover ul.sub{
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+
+        <div class="menu">
+
+<ul>
+    <li>HOME</li>
+    <li>
+        <span>PRODUCTS</span>
+        <ul class="sub">
+            <li>TIVI</li>
+            <li>MAY TINH XÁCH TAY</li>
+        </ul>
+    </li>
+    <li>ABOUT US</li>
+    <li>CONTACT</li>
+</ul>
+
+        </div>
+    </div>
+</body>
+</html>

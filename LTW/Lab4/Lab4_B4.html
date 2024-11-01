@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4-Bai4</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 50px;
+          background-color: #f0f0f0;
+        }
+        textarea, input {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        button:hover {
+          background-color: #45a049;
+        }
+        #result {
+          margin-top: 20px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+<body>
+    <h1>ĐẾM SỐ LẦN XUẤT HIỆN</h1>
+
+  <textarea id="textA" rows="6" placeholder="Nhập văn bản (A): "></textarea>
+  <input type="text" id="textB" placeholder="Nhập chuỗi cần tìm (B): ">
+  <button onclick="countOccurrences()">Đếm</button>
+
+  <div id="result"></div>
+
+  <script>
+    function countOccurrences() {
+      const textA = document.getElementById('textA').value;
+      const textB = document.getElementById('textB').value;
+      let result = document.getElementById('result');
+
+      if (textB === '') {
+        result.textContent = "Chuỗi B không được để trống.";
+        return;
+      }
+
+      // Sử dụng biểu thức chính quy để tìm tất cả các lần xuất hiện của B trong A
+      const regex = new RegExp(textB, 'g');
+      const matches = textA.match(regex);
+      const count = matches ? matches.length : 0;
+
+      result.textContent = `Chuỗi "${textB}" xuất hiện ${count} lần trong văn bản.`;
+    }
+  </script>
+</body>
+</html>

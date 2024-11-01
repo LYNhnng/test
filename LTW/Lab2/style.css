@@ -1,0 +1,294 @@
+htnl, body{
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+box-sizing: border-box;
+
+}
+/*for id*/
+/*1 */
+#section_header_2_dark{
+    background-color: #333;
+    height: 95px;
+
+
+}
+#section_header_2_dark .navbar-header{
+    width: 50%;
+    float: left;
+    padding-top: 30px;
+ 
+   
+}
+#section_header_2_dark .navbar-header img{
+    width: 167px;
+   
+}
+#section_header_2_dark .navbar-collapse{
+    float: right;
+    width: 50%;
+  
+   
+   
+}
+#section_header_2_dark .navbar-collapse ul{
+margin: 0;
+padding: 0;
+}
+#section_header_2_dark .navbar-collapse ul li{
+list-style-type: none;
+float: left;
+padding: 40px 25px;
+}
+#section_header_2_dark .navbar-collapse ul li a{
+color: #ccc;
+text-decoration: none;
+font-weight: 600;
+font-size: 120%;
+}
+#section_header_2_dark .navbar-collapse ul li span{
+    color: #f3ce54;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 120%;
+}
+/* 2 */
+
+#section_pix_4{
+height: 890px;
+text-align: center;
+background-color: #797371;
+
+}
+#section_pix_4 .section_video{
+    height: auto;
+    width: 100%;
+    opacity: 0.8;
+   
+
+}
+#section_pix_4 .title_style{
+font-weight: bold;
+
+font-size: 250%;
+color: #ffffff;
+
+}
+#section_pix_4 .subtitle_style{
+ 
+    font-size: 130%;
+    color: #f2f1f1;
+   
+   
+   
+
+
+
+}
+#section_pix_4 .email_subscribe{
+background-color: #120c0d;
+width: 750px;
+height: 50px;
+margin: 0 auto;
+
+}
+#section_pix_4 .email_subscribe input{
+    width: 70%;
+    padding: 10px 10px;
+    color: #7b7b7b;
+    font-size: 100%;
+    border-radius: 5px;
+    
+   
+
+}
+#section_pix_4 .email_subscribe button{
+    background-color: #eac451;
+    color: #fffefc;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#section_pix_4 .note_st{
+    color: #e1e0e1;
+    font-size: 80%;
+    text-align: center;
+
+}
+/*3 */
+#hidden_pix_1{
+  background-color: #ccc;
+  height: 160px;
+  padding: 15px;
+  text-align: center;
+  display: none;
+}
+#hidden_pix_1 .confirm_logo{
+   background-color: red;
+ 
+
+}
+#hidden_pix_1 .confirm_header{
+   
+    font-size: 25px;
+   margin: 15px;
+}
+
+#hidden_pix_1 .confirm_text{
+font-size: 13px;
+}
+#hidden_pix_1 .confirm_social{
+    padding: 15px;
+    background-color: #8dc37e;
+    width: 60px;
+    
+}
+/* 4*/
+
+#section_university_5{
+   
+    height: 820px;
+    margin: 0;
+    padding: 15px;
+
+}
+/* 4.1 */
+#section_university_5 .zone_left{
+    float: left;
+    height: 100%;
+    width: calc(60%-40px);
+    box-sizing: border-box;
+  
+    overflow: hidden;
+    margin: 20px;
+    padding: 50px;
+    
+    
+
+}
+
+#zone_left .psingle_item img{
+float: left;
+padding: 20px;
+width: 50%;
+}
+#zone_left .psingle_item .text_st{
+display: block;
+float: right;
+width: 50%;
+}
+
+#zone_left .psingle_item .text_st h3{
+    font-size: 30px;
+    color: #0b0b0b;
+}
+#zone_left .psingle_item .text_st h6{
+font-size: 20px;
+color: #b7b7b7;
+}
+
+
+/* 4.2*/
+
+    #section_university_5 .omega{
+        width: (40%-40px);
+        height: 100%;
+        box-sizing: border-box;
+        float: right;
+        padding-bottom: 40px;
+     
+    
+        background-color: #ebeaea;
+        
+        border-radius: 8px;  
+    }
+#section_university_5 .omega .substyle {
+color: #1a1a1a;
+padding-top: 40px;
+font-size: 30px;
+padding-left: 15px;
+}
+#section_university_5 .omega .text-style{
+    font-size: 20px;
+   color: #b7b7b7;
+   padding-left: 15px;
+}
+#section_university_5 .omega input{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px; 
+    border: solid 1px gray;
+    margin: 15px;
+    padding-right: 15px;
+}
+
+#section_university_5 .omega .select_st select{
+    width: 420px;
+    height: 35px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+#section_university_5 .omega .submit_btn{
+    width: 420px;
+    height: 35px;
+    border-radius: 5px; 
+  background-color: #8dc37e;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* 5 */
+#hidden_pix_6{
+  
+    height: 80pxpx;
+    text-align: center;
+    color: #ffffff ;
+    background-color: #797371;
+    padding: 10px;
+    display: none;
+    
+}
+#hidden_pix_6 .confirm_header{
+font-size: 20px;
+font-weight: bold;
+padding: 10px;
+}
+#hidden_pix_6 .confirm_text{
+font-size: 13px;
+
+
+}
+#hidden_pix_6 .confirm_icons {
+    background-color: red;
+    
+
+   
+}
+#hidden_pix_6 .p.confirm_icons  li{
+   list-style-type: none;
+   
+}
+
+#section_ecourse_7 .foot_st{
+   margin: 0;
+   border: solid 2px black;
+}
+#sfoot_st .alpha{
+    float: left;
+    width: calc(50%-40px);
+    background-color: blue;
+}
+#scetion_ecourde_7 .socbuttons{
+    float: right;
+    width: calc(50%-40px);
+    background-color: red;
+}
+/*for class*/
+.container{
+  
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
